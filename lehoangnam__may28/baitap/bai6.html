@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bai6.css">
+    <title>Document</title>
+</head>
+<body onload="load_form()">
+    <table id="a">
+        <th colspan="2"> Thông tin đăng ký</th>
+        <tr>
+            <td>Họ tên</td>
+            <td> <input id="user" type="text" oninput ="unlock()"></td>
+        </tr>
+        <tr>
+            <td>Mật khẩu</td>
+            <td><input id ="pass" type="text"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input id="btn" type="button" value ="Nhập" onclick="get_data()"></td>
+        </tr>
+</table>
+
+<table id="b">
+    <th colspan="2"> Thông tin đăng nhập</th>
+    <tr>
+        <td>Username</td>
+        <td id="user1"> </td>
+    </tr>
+    <tr>
+        <td>Mật khẩu</td>
+        <td id ="pass1"></td>
+    </tr>
+    
+</table>
+<script src="js/bai6.js"></script>
+</body>
+</html>

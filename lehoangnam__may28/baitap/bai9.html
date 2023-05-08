@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bai9.css">
+    <title>Document</title>
+</head>
+<body onload="load_form()">
+    <div class="header">
+        <img src="img/download.jpg" alt="">
+    </div>
+    <div class="main">
+        <div class="table_menu">
+            <table class="table">
+                <th colspan="2">Bảng tin thị trường</th>
+                <tr>
+                    <td colspan="2">Vàng</td>
+                </tr>
+                <tr>
+                    <td>Mua vào</td>
+                    <td>Bán ra</td>
+                </tr>
+                <tr>
+                    <td id="update_muavao_vang">710000</td>
+                    <td id="update_banra_vang">712000</td>
+                </tr>
+                
+                    <th colspan="2">USD</th>
+                
+                <tr>
+                    <td>Mua vào</td>
+                    <td>Bán ra</td>
+                </tr>
+                <tr>
+                    <td id="update_muavao_usd">15.5</td>
+                    <td id="update_banra_usd">15.72</td>
+                </tr>
+            </table>
+        </div>
+        <div class="main1">
+            <table class="table1">
+                <th>Cập nhật giá cả thị trường</th>
+                <tr>
+                    <td>Mua vào</td>
+                    <td><input type="text" id="muavao" onchange="unlock()"></td>
+                </tr>
+                <tr>
+                    <td>Bán ra</td>
+                    <td><input type="text" id="banra"></td>
+                </tr>
+                <tr>
+                    <td>Chọn hình quảng cáo </td>
+                    <td>
+                        <select id="cb" onchange="change_img()">
+                            <option value="" >Toyota</option>
+                            <option value="" >KiA</option>
+                            <option value="" >Ford</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Cập nhật cho</td>
+                    <td>
+                        <input type="radio" id="rbd_vang" name="rbd"> Vàng
+                        <input type="radio" id="rbd_usd" name="rbd"> USD
+                     </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><button onclick = "update()" id="btn_update">
+                    Update
+                    </button>
+                    <button id="btn_state">
+                        State
+                    </button></td>
+                </tr>
+            </table>
+        </div>
+        <div class="main2">
+           <p> Bảng báo giá </p>
+           <div class="text">
+               - Vơi kiểu đăng thể thao,sang trọng <br>
+               -Nổi bật <br>
+               -Tốn it nhiên liệu <br>
+               -Nhiên liệu <br>
+           </div>
+           <img id="img" src="img/download.jpg" alt="">
+           <p id="sum">Giá : </p>
+        </div>
+    </div>
+    <script src="js/bai9.js"></script>
+</body>
+</html>

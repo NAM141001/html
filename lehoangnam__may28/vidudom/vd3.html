@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="img/download.jpg" width=100 height=200 id="idhinh">
+    <form>
+    <input type=button value= Play onClick= "play()">
+    <input type=button value= Stop onClick= "Stop()">
+    </form>
+    <script>
+        var  idq;
+        function play()
+        {
+        var arrhinh= new Array();
+        arrhinh[0]= "img/dowload.jpg";
+        arrhinh[1]= "img/images.jpg";
+        arrhinh[2]= "img/img.jpg";
+        var i=Math.round(Math.random()*3)
+        idhinh.src=arrhinh[i];
+        idq=setTimeout("play()",1000);
+        }
+        function Stop()
+        {
+        clearTimeout(idq);
+        }
+        </script>
+</body>
+</html>

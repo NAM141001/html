@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var  idq;
+        function play()
+        {
+        var arrhinh= new Array();
+        arrhinh[0]= "h1.jpg";
+        arrhinh[1]= "h2.jpg";
+        arrhinh[2]= "h3.jpg";
+        arrhinh[3]= "h4.jpg";
+        arrhinh[4]= "h5.jpg";
+        arrhinh[5]= "h6.jpg";
+        var i=Math.round(Math.random()*6)
+        idhinh.src=arrhinh[i];
+        idq=setTimeout("play()",1000);
+        }
+        function Stop()
+        {
+        clearTimeout(idq);
+        }
+        </script>
+
+    <script type="text/javascript">
+        function check()
+        {
+        coffee=document.forms[0].coffee
+        answer=document.forms[0].answer
+        txt=""
+        for (i = 0; i<coffee.length; ++ i)
+        {
+        if (coffee[i].checked)
+        {txt=txt + coffee[i].value + " "}
+        }
+        answer.value="You ordered a coffee with " + txt
+        }
+        </script>
+    
+    <script type="text/javascript">
+        function put()
+        {
+        txt=document.forms[0].dropdown.options[document.forms[0].
+        dropdown.selectedIndex].text
+        document.forms[0].favorite.value=txt
+        }
+        </script>
+        
+</head>
+<body>
+    <script type="text/javascript">
+        var str="Nguyễn Thị Hoa Hồng !"
+        document.write("<p>" + str + "</p>")
+        document.write("Chieu dai cua chuoi la : "+ str.length)
+        </script>
+
+    <script type="text/javascript">
+        var txt="Nguyễn Thị  Bảo Nhi "
+        document.write("<p>" + txt.fontcolor() + "</p>")
+        document.write("<p>" + txt.fontcolor('red') + "</p>")
+        document.write("<p>" + txt.fontcolor('blue') + "</p>")
+        document.write("<p>" + txt.fontcolor('green') + "</p>")
+        </script>
+
+    <script type="text/javascript">
+        var str="This is my Schools "
+        var pos=str.indexOf("School")
+        if (pos>=0)
+        {
+        document.write("School found at position: ")
+        document.write(pos + "<br />")
+        }
+        Else
+        {document.write("School not found!")}
+        </script>
+    
+    <script>
+        var n= -136.8 , m=136.8
+       Document.write("abs(-136.8) =  "+ Math.abs(n) +"<br>")
+       Document.write("ceil(136.8) = " + Math.ceil(m) +"<br>")
+       Document.write("floor (136.8) = " + Math.floor(m) +"<br>")
+       Document.write("pow (2,3) = " + Math.pow(2,3)+"<br>")
+       Document.write("Mot so ngau nhien: " + Math.random()*5 +"<br>")
+       </script>
+       
+
+        <img src=”hinh.jpg” width=100 height=200 id=”idhinh”>
+        <form>
+        <input type=button value= “Play” onClick= "Play()">
+        <input type=button value= “Stop” onClick= "Stop()">
+        </form>
+
+        <FORM NAME="winform">
+            <INPUT TYPE="button" VALUE="Open New Window" 
+            onClick="NewWin=window.open('blank1.htm','NewWin',
+            'toolbar=no,status=no,width=200,height=100'); ">
+            <P><INPUT TYPE="button" VALUE="Close New Window"
+            onClick="NewWin.close();" >
+            <P><INPUT TYPE="button" VALUE="Close Main Window"
+            onClick="window.close();">
+        </FORM>
+        
+        <form name="form1" method="post" action="">
+            <table>
+            <tr>
+            <td>Enter your E-mail address: </td>
+             <td><input type="text" name="MyEmail"></td>
+             </tr>
+             <tr>
+                <td  align="center"colspan="2">
+            <input type="submit" name="Submit" value="Send Input" onclick= "validate()">
+            </td>  
+              </tr>
+              </table>
+            </form>
+            <script>
+            function validate()
+            {
+            ad= document.form1.MyEmail.value.indexOf("@")
+            if (ad == -1)
+                {
+                alert("Not a valid e-mail")
+                return false
+                } 
+            }
+            </script>
+            
+        <form>
+            How would you like your coffee?<br>
+            <input type="checkbox" name="coffee" value="cream">With  cream<br>
+            <input type="checkbox" name="coffee" value="sugar">With sugar<br>
+            
+            <input type="text" name="answer" size="30">
+            <input type="button" name="test" onclick="check()" value="Order">
+            </form>
+
+        <form>
+            Select your favorite browser:
+            <select name="dropdown" onchange="put()">
+            <option>internet Explorer
+            <option>Netscape Navigator
+            </select>
+            <p>
+            Your favorite browser is:
+            <input type="text"
+            name="favorite" value="internet Explorer">
+            </form>
+                
+                
+</body>
+</html>

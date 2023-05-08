@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var str="Nguyễn Thị Hoa Hồng !"
+        document.write("<p>" + str + "</p>")
+        document.write("Chieu dai cua chuoi la : "+ str.length)
+        var txt="Nguyễn Thị  Bảo Nhi "
+        document.write("<p>" + txt.fontcolor() + "</p>")
+        document.write("<p>" + txt.fontcolor('red') + "</p>")
+        document.write("<p>" + txt.fontcolor('blue') + "</p>")
+        document.write("<p>" + txt.fontcolor('green') + "</p>")
+        var str="This is my Schools "
+        var pos=str.indexOf("School")
+        if (pos>=0)
+        {
+        document.write("School found at position: ")
+        document.write(pos + "<br />")
+        }
+        Else
+        {document.write("School not found!")}
+        </script>
+</body>
+</html>

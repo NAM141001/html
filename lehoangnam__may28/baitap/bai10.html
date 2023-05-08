@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bai10.css">
+    <title>Document</title>
+</head>
+<body>
+    <table id="table_input">
+        <th colspan="2">Đăng ký học phần</th>
+        <tr>
+            <td>Họ tên</td>
+            <td><input type="text" id="tensv"></td>
+        </tr>
+        <tr>
+            <td>Lớp</td>
+            <td>
+                <select  id="lop">
+                    <option value="" >TCTH30A</option>
+                    <option value="">TCTH30B</option>
+                    <option value="">TCTH30C</option>
+                </select>
+
+            </td>
+        </tr>
+        <tr>
+            <td>Môn</td>
+            <td>
+                <select  id="mon">
+                    <option value="">Co so du lieu</option>
+                    <option value="">Co so du lieu 1</option>
+                    <option value="">Co so du lieu 2</option>
+                </select>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>Loại</td>
+            <td>
+                <input type="radio" value="Lý thuyết" name="c" id ='a'> Lý thuyết
+                <input type="radio" value ="Thực hành" name="c" id='b'> Thực hành
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="button" value="Đăng ký" onclick="add()"></td>
+        </tr>
+    </table>
+    <table id="render">
+        
+    </table>
+    <script src="js/bai10.js"></script>
+</body>
+</html>
